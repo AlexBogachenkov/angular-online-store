@@ -1,0 +1,8 @@
+<h2>{{ product?.title }}</h2>
+<p>{{ product?.category }}</p>
+@for (imgLink of product?.images; track imgLink) {
+  <img [src]="imgLink">
+}
+<img src="">
+<p>{{ product?.description }}</p>
+<h3>{{ product?.price | currency: 'EUR' }}</h3>
